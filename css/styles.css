@@ -1,0 +1,520 @@
+/*****
+    Globals *********************************************/
+body {
+  color: #495057;
+}
+
+.name, .card-title, .title, .btn, h1, a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Poly', serif;
+}
+
+/* Palette
+ Brown: #4c2b00, rgb(76,43,0)
+Orange: #e78200, rgb(231,130,0)
+Yellow: #e5d80e, rgb(229,216,14)
+Blue: #1761a0, rgb(23,97,160)
+Green: #419a1c, rgb(65,154,28)
+Purple: #650d88, rgb(101,13,136)
+Grey: #495057, rgb(73, 80, 87)
+*/
+
+.btn {
+  background-color: #e5d80e;
+  border: none;
+  font-weight: normal;
+  padding: 15px;
+  font-size: 18px;
+}
+/*****
+    Navigation ******************************************/
+.navbar .logo {
+  height: 55px;
+  width: auto;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+.navbar .name {
+  color: #e78200;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-nav a {
+  color: #495057;
+  /* font-size: 25px; */
+}
+
+.navbar-nav a:hover {
+  color: white;
+  /* font-size: 25px; */
+}
+
+.navbar-nav .home:hover {
+  background-color: rgba(23,97,160,0.7);
+}
+
+.navbar-nav .about:hover {
+  background-color: rgba(101,13,136,0.7);
+}
+
+.navbar-nav .events:hover {
+  background-color: rgba(231,130,0,0.7);
+}
+
+.navbar-nav .gallery:hover {
+  background-color: rgba(229,216,14,0.7);
+  color: #495057;
+}
+
+.navbar-nav .contact:hover {
+  background-color: #495057;
+  color: white;
+}
+
+.navbar-nav .donate {
+  background-color: rgb(65,154,28);
+}
+
+.navbar-nav .donate a {
+  color: white;
+}
+
+/* .navbar-nav .donate:hover {
+  background-color: #3e8e41;
+} */
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(73,80,87)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 992px) {
+  .navbar-nav a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+/*****
+    Hero Image ******************************************/
+.hero {
+  color: white;
+  text-align: right;
+  margin-top: 70px;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.hero .btn {
+  text-shadow: none;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    text-align: left;
+  }
+}
+
+.hero .card {
+  background: linear-gradient(to right, rgba(23, 97, 1600, 0.5), rgba(23, 97, 160, 0.5)),url("../pictures/Cropped/FF9.jpg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero .card-title {
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+/*****
+    Who We Are *****************************************/
+.who {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .who {
+    margin-top: 50px;
+  }
+}
+
+.who .left {
+  border: none;
+}
+
+.who .pic {
+  background: linear-gradient(to right, rgba(101, 13, 136, 0.3), rgba(101, 13, 136, 0.3)),url("../pictures/Cropped/FF3.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:cover;
+  height: 300px;
+}
+
+@media (min-width: 576px) {
+  .who .pic {
+    height: 500px;
+  }
+}
+
+.who .title {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: rgb(101,13,136);
+}
+
+@media (min-width: 480px) {
+  .who .title {
+    font-size: 60px;
+  }
+}
+
+/* .who span {
+  color: rgba(101,13,136,0.9);
+  font-weight: bold;
+} */
+
+.who .text {
+  font-size: 18px;
+  border: none;
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+
+@media (max-width: 992px) {
+  .who .text {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.who .btn {
+  margin-top: 5px;
+}
+
+/*****
+    What We Do *****************************************/
+.what {
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .what {
+    margin-top: 50px;
+  }
+}
+
+.what .title {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: rgb(231,130,0);
+  /* text-shadow: 1px 1px 1px #000000; */
+}
+
+@media (min-width: 480px) {
+  .what .title {
+    font-size: 60px;
+  }
+}
+
+.what .card-title {
+  font-size: 60px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 662px) {
+  .what .card-title {
+    font-size: 45px;
+  }
+}
+
+.what p {
+  padding: 45px;
+}
+
+@media (max-width: 884px) {
+  .what p {
+    padding: 0px;
+  }
+}
+
+.what .serve {
+  background: linear-gradient(to right,  rgba(231, 130, 0, 0.6), rgba(231, 130, 0, 0.6)),url("../pictures/CM1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+}
+
+.what .operate {
+  background: linear-gradient(to right, rgba(231, 130, 0, 0.6), rgba(231, 130, 0, 0.6)),url("../pictures/CM2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+}
+
+.what .promote {
+  background: linear-gradient(to right, rgba(231, 130, 0, 0.6), rgba(231, 130, 0, 0.6)),url("../pictures/CM3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+}
+
+/*****
+    Who You Are *****************************************/
+.you {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.you .title {
+  padding-top: 50px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.you .background {
+  position: relative;
+}
+
+.you .image {
+  background: linear-gradient(to right, rgba(65, 154, 28, 0.4), rgba(65, 154, 28, 0.4)),url("../pictures/Cropped/CM6.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.you .card {
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 576px) {
+  .you .background {
+    position: static;
+  }
+
+  .you .image {
+    height: 300px;
+  }
+
+  .you .card {
+    position: static;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .you .card {
+    padding: 0px;
+  }
+}
+
+.you .btn {
+  margin-top: 5px;
+}
+
+
+
+/*****
+    What You Can Do *****************************************/
+.do {
+  margin-top: 300px;
+  margin-bottom: 100px;
+  /* color: black; */
+}
+
+@media (max-width: 576px) {
+  .do {
+    margin-top: 50px;
+  }
+}
+
+.do .title {
+  font-size: 30px;
+  /* color: rgb(229,216,14); */
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+@media (min-width: 480px) {
+  .do .title {
+    font-size: 60px;
+  }
+}
+
+.do a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/************* card **************/
+
+.do .text-center {
+  background-color: rgba(229,216,14,0.7);
+  opacity: 0.5;
+}
+
+@media (min-width: 568px) {
+  .do .text-center {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .do .text-center {
+    max-height: 375px;
+  }
+}
+
+.do .text-center:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.do .card-title {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .do .card-title {
+    font-size: 60px;
+  }
+}
+
+.do .card-text {
+  font-size: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 1220px) {
+  .do .card-text {
+    padding: 0px;
+  }
+}
+
+/************* icon **************/
+
+.do .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  /* fill: #495057; */
+}
+
+@media (min-width: 768px) {
+  .do .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .do .icon {
+    margin-bottom: 0px;
+  }
+}
+
+/************* picture **************/
+
+.do .pic {
+  background: linear-gradient(to right, rgba(229, 216, 14, 0.2), rgba(229, 216, 14, 0.2)),url("../pictures/FF7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height: 250px;
+}
+
+@media (min-width: 576px) {
+  .do .pic {
+    height: auto;
+  }
+}
+
+@media (max-width: 1180px) {
+  .do .middle {
+    display: none;
+  }
+}
+
+/*****
+    Footer *****************************************/
+.footer .background {
+  background: linear-gradient(to right, rgba(76, 43, 0, 0.3), rgba(76, 43, 0, 0.3)),url("../pictures/Cropped/FF24.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer .background {
+    height: 150px;
+  }
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer .links {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer li {
+  color: #495057;
+  font-size: 18px;
+}
+
+.footer a:link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+.footer a:hover {
+  color: #1761a0;
+}
+
+.footer li .header {
+  font-size: 20px;
+  color: #1761a0;
+  font-weight: bold;
+}
+
+.footer li .header:hover {
+  color: #495057;
+}
+
+.footer .copyright {
+  margin-top: 5px;
+  background-color: #1761a0;
+  font-size: 18px;
+  color: white;
+  height: 30px;
+}
